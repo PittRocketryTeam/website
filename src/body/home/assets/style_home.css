@@ -1,0 +1,14 @@
+.w-and-w {
+    display: flex;
+    justify-content: space-around;
+}
+
+.w-and-w > div {
+    flex: 1;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.w {
+    background-color: #adccdd;
+}

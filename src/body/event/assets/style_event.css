@@ -1,0 +1,43 @@
+.event_grey {
+    background-color: #f6f6f6;
+}
+
+.event_blue {
+    background-color: #adccdd;
+}
+
+.event_blue, .event_grey {
+    margin-top: 20px;
+}
+
+.event {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.time-and-place {
+    font-size: 16px;
+}
+
+.no-events {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #adccdd;
+    color: #a2a2a2;
+}
+
+.no-meeting {
+    color: red;
+}
+
+.show {
+    color: #928ad4;
+}
+
+.poop {
+    display: flex;
+    justify-content: space-between;
+}
