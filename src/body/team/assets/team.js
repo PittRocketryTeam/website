@@ -1,4 +1,4 @@
-const img_path = "/img/officers/"
+const img_path = process.env.PUBLIC_URL + "/img/officers/"
 
 const team = {
     "team": [

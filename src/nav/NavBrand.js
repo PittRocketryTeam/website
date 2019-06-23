@@ -30,13 +30,13 @@ class NavBrand extends React.Component {
                 {this.state.isHovering ? (
                     <img
                         className="HomeRocket"
-                        src="/img/rocket_anmi.gif"
+                        src={process.env.PUBLIC_URL+"/img/rocket_anmi.gif"}
                         alt="Rocket Home"
                     />
                 ) : (
                     <img
                         className="HomeRocket"
-                        src="/img/logo.png"
+                        src={process.env.PUBLIC_URL+"/img/logo.png"}
                         alt="Rocket Home"
                     />
                 )}
