@@ -15,9 +15,9 @@ function Routes() {
         <div className="title">
         <Switch>
             <Route exact path={`/team`} component={Team} />
-            <Route path={`/events`} component={Event} />
-            <Route path={`/projects`} component={Projects} />
-            <Route path={`/learn`} component={Learn} />
+            <Route exact path={`/events`} component={Event} />
+            <Route exact path={`/projects`} component={Projects} />
+            <Route exact path={`/learn`} component={Learn} />
             <Route exact path={`/`} component={Home} />
             <Route render={function () {
                 return <p>Not found</p>
