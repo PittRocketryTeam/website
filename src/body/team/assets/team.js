@@ -3,7 +3,6 @@ const img_path = "/img/officers/"
 const team = {
     "team": [
         {
-            "member": 1,
             "name": "George Washington",
             "position": "President",
             "image": img_path + "officer_helmet.jpg",
@@ -24,7 +23,6 @@ const team = {
             skills: ["rockets", "electronics", "programming", "mechanical"]
         },
         {
-            "member": 2,
             "name": "Thomas Jefferson",
             "position": "Vice President",
             "image": img_path + "officer_sit.jpg",
@@ -35,7 +33,6 @@ const team = {
             skills: ["rockets", "electronics", "programming", "mechanical"]
         },
         {
-            "member": 3,
             "name": "Benjamin Franklin",
             "position": "Techincal Lead",
             "image": img_path + "officer_helmet.jpg",
@@ -46,7 +43,6 @@ const team = {
             skills: ["rockets", "electronics", "programming", "mechanical"]
         },
         {
-            "member": 4,
             "name": "John Adams",
             "position": "Outreach Lead",
             "image": img_path + "officer_sit.jpg",
@@ -57,7 +53,6 @@ const team = {
             skills: ["rockets", "electronics", "programming", "mechanical"]
         },
         {
-            "member": 5,
             "name": "Thomas Paine",
             "position": "Business Lead",
             "image": img_path + "officer_helmet.jpg",

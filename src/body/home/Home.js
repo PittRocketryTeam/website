@@ -7,7 +7,7 @@ function Home() {
     return (
         <div>
             <div className="home">
-                <Image src="/img/space.png" fluid />
+                <Image src={process.env.PUBLIC_URL + "/img/space.png"} fluid />
                 <h3>Mission Statement</h3>
                 <p>In 1962 President John F. Kennedy said "We choose to go to the
                 moon in this decade... not because they are easy, but because they
