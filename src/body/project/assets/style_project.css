@@ -1,0 +1,11 @@
+.main-pic {
+    margin: 10px;
+    width: 650px;
+    height: 400px;
+    float: left;
+}
+
+.main-desc {
+    float: none;
+    font-size: 12;
+}

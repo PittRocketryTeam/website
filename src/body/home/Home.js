@@ -1,5 +1,6 @@
 import React from "react";
 import {Image} from "react-bootstrap";
+import Sponsors from "./sponsors/Sponsors";
 import Footer from "./Footer";
 import "./assets/style_home.css";
 
@@ -29,6 +30,7 @@ function Home() {
                     <strong>Thursdays 6:00</strong>
                 </div>
             </div>
+            <Sponsors />
             <Footer />
         </div>
     )

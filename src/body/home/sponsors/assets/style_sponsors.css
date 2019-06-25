@@ -1,0 +1,21 @@
+.box {
+    width: 300px;
+}
+
+.circle {
+    width: 100px;
+}
+
+.box, .circle {
+    margin-left: 5px;
+}
+
+.sponsors {
+    color: #025393;
+    text-align: center;
+    background-color: #e7e8e9;
+}
+
+.sponsor_imgs {
+    text-align: center;
+}

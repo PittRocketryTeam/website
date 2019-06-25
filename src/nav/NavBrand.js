@@ -22,6 +22,7 @@ class NavBrand extends React.Component {
     }
 
     render () {
+        console.log("Logo process.env", process.env.PUBLIC_URL);
         return (
             <div
                 onMouseEnter={this.handleMouseHover}
