@@ -1,13 +1,15 @@
 import React from "react";
 import {
     Card,
-    Accordion
+    Accordion,
+    Image
 } from "react-bootstrap";
 
 function ProjectDesc(props) {
-    const key = props.key
-    const {title, img, description} = props.attr;
-    const image = img;
+    const key = props.index
+    const {title, image, description} = props.attr;
+    console.log(description);
+    const img = process.env.PUBLIC_URL + "/img/projects/" + image;
     return (
         <Card>
             <Accordion.Toggle
@@ -18,8 +20,12 @@ function ProjectDesc(props) {
             </Accordion.Toggle>
             <Accordion.Collapse eventKey={key}>
                 <Card.Body>
+                    <Image
+                        src={img}
+                        className="subteam-img"
+                    />
                     <div className="subteam-desc">
-                        {description}
+                        <p>{description}</p>
                     </div>
                 </Card.Body>
             </Accordion.Collapse>

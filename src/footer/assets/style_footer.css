@@ -1,0 +1,39 @@
+.footer {
+    background-color: #4980af;
+    color: white;
+    margin-top: auto;
+    width: 100%;
+    padding: 10px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    color: white;
+    font-size: 16px;
+}
+.contact-link:hover {
+    color: white;
+    font-size: 16px;
+}
+.contact-link:visited {
+    color: white;
+    font-size: 16px;
+}
+.contact-link:link {
+    color: white;
+    font-size: 16px;
+}
+
+.webmaster {
+    font-size: 12px;
+}

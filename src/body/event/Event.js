@@ -4,7 +4,7 @@ import {
     Dropdown
 } from "react-bootstrap";
 import EventDate from "./EventDate";
-import events from "./assets/events";
+import events from "./assets/no_events";
 import "./assets/style_event.css";
 
 class Event extends React.Component {

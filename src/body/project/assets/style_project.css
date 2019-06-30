@@ -1,3 +1,6 @@
+.projects {
+    margin-bottom: 10px;
+}
 .main-pic {
     margin: 10px;
     width: 650px;
@@ -8,4 +11,16 @@
 .main-desc {
     float: none;
     font-size: 12;
+}
+
+.subteam-img {
+    margin: 10px;
+    width: 300px;
+    float: left;
+}
+
+.subteam-desc {
+    float: none;
+    font-size: 12;
+    color: black;
 }

@@ -1,23 +1,31 @@
 const sponsors = {
     "sponsors": [
         {
-            "img": "nasa.png",
-            "class": "circle"
-        },
-        {
-            "img": "boeing.png",
+            "img": "ansys.png",
             "class": "box"
         },
         {
-            "img": "lockheed.png",
+            "img": "memspitt.png",
             "class": "box"
         },
         {
-            "img": "northrop.png",
+            "img": "saleae.png",
             "class": "box"
         },
         {
-            "img": "raytheon.png",
+            "img": "SGB.png",
+            "class": "box"
+        },
+        {
+            "img": "solidworks.png",
+            "class": "box"
+        },
+        {
+            "img": "swanson.png",
+            "class": "box"
+        },
+        {
+            "img": "workzone.png",
             "class": "box"
         }
     ]

@@ -7,7 +7,6 @@ import Home from "../body/home/Home";
 import Team from "../body/team/Team";
 import Event from "../body/event/Event";
 import Projects from "../body/project/Projects";
-import Learn from "../body/Learn";
 
 function Routes() {
     console.log("This is the process.env", process.env.PUBLIC_URL);
@@ -17,7 +16,6 @@ function Routes() {
             <Route exact path={`/team`} component={Team} />
             <Route exact path={`/events`} component={Event} />
             <Route exact path={`/projects`} component={Projects} />
-            <Route exact path={`/learn`} component={Learn} />
             <Route exact path={`/`} component={Home} />
             <Route render={function () {
                 return <p>Not found</p>

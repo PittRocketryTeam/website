@@ -11,7 +11,7 @@ import "./assets/style_project.css";
 function Projects() {
     const path = process.env.PUBLIC_URL + "/img/projects/"
     return (
-        <div>
+        <div className="projects">
             <h1> Projects </h1>
             <div className="main">
                 <Image
@@ -26,6 +26,7 @@ function Projects() {
                         return (
                             <ProjectCard
                                 key={index}
+                                index={index}
                                 attr={value}
                                 basename={process.env.PUBLIC_URL}
                             />

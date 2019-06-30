@@ -12,3 +12,14 @@
 .w {
     background-color: #adccdd;
 }
+
+.mission-statement {
+    color: #025393;
+    text-align: center;
+    background-color: #e7e8e9;
+    margin-top: 10px;
+}
+
+.statement {
+    margin-bottom: 50px;
+}

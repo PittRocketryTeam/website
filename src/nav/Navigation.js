@@ -19,7 +19,6 @@ function Navigation() {
                     <Nav.Link as={Link} to="/team">Officers</Nav.Link>
                     <Nav.Link as={Link} to="/events">Events</Nav.Link>
                     <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-                    <Nav.Link as={Link} to="/learn">Learn</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

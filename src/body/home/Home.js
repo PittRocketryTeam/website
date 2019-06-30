@@ -1,7 +1,6 @@
 import React from "react";
 import {Image} from "react-bootstrap";
 import Sponsors from "./sponsors/Sponsors";
-import Footer from "./Footer";
 import "./assets/style_home.css";
 
 function Home() {
@@ -9,12 +8,13 @@ function Home() {
         <div>
             <div className="home">
                 <Image src={process.env.PUBLIC_URL + "/img/space.png"} fluid />
-                <h3>Mission Statement</h3>
-                <p>In 1962 President John F. Kennedy said "We choose to go to the
-                moon in this decade... not because they are easy, but because they
-                are hard". This speech kicked off the space race which brough placing
-                Americans on the moon. Today
-                </p>
+                <h1 className="mission-statement">
+                    Mission Statement
+                </h1>
+                <h3 className="statement">
+                    To grow a community in Pittsburgh dedicated to advancing
+                    human spaceflight technology
+                </h3>
             </div>
             <div className="w-and-w">
                 <div>
@@ -31,7 +31,6 @@ function Home() {
                 </div>
             </div>
             <Sponsors />
-            <Footer />
         </div>
     )
 }

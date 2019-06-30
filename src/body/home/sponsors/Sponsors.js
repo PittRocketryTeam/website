@@ -8,7 +8,7 @@ function Sponsors() {
     return (
         <div>
             <div className="sponsors">
-                <h2>Sponsors</h2>
+                <h1>Sponsors</h1>
             </div>
             <div className="sponsor_imgs">
                 {sponsors["sponsors"].map((value, index) => {
