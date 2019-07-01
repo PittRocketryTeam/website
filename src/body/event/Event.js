@@ -3,8 +3,9 @@ import {
     DropdownButton,
     Dropdown
 } from "react-bootstrap";
+import debounce from "lodash.debounce";
 import EventDate from "./EventDate";
-import events from "./assets/no_events";
+import LocalEventAPI from "./assets/LocalEventAPI";
 import "./assets/style_event.css";
 
 class Event extends React.Component {
@@ -13,11 +14,58 @@ class Event extends React.Component {
         this.state = {
             newest: true,
             title: "newest",
-            other: "oldest"
+            other: "oldest",
+
+            eventAPI: new LocalEventAPI(),
+            hasMore: true,
+            isLoading: false,
+            events: []
         }
 
         this.handleSelect = this.handleSelect.bind(this);
+
+        window.onscroll = debounce(() => {
+            const {
+                loadUsers,
+                state: {
+                    isLoading,
+                    hasMore,
+                },
+            } = this;
+
+            if (isLoading || !hasMore) return;
+
+            if (
+                window.innerHeight + document.documentElement.scrollTop
+                === document.documentElement.offsetHeight
+            ) {
+                loadUsers();
+            }
+        }, 500);
     }
+
+    componentWillMount() {
+        this.loadUsers();
+    }
+
+    loadUsers = () => {
+        this.setState({isLoading: true}, () => {
+            this.state.eventAPI.get_events()
+            .then((results) => {
+                const nextEvents = results.events;
+
+                this.setState({
+                    hasMore: results.hasMore,
+                    isLoading: false,
+                    events: [
+                        ...this.state.events,
+                        ...nextEvents
+                    ]
+                })
+            });
+        });
+    }
+
     handleSelect(event) {
         const label = event.target.innerText === "newest";
         this.setState({
@@ -25,9 +73,19 @@ class Event extends React.Component {
             title: label ? "newest" : "oldest",
             other: label ? "oldest" : "newest"
         })
+        this.state.eventAPI.start_over(label);
+        this.setState({
+            events: []
+        })
+        this.loadUsers();
     }
+
     render() {
-        const newest = this.state.newest;
+        const {
+            isLoading,
+            events
+        } = this.state;
+
         return (
             <div>
                 <div className="event-title">
@@ -47,13 +105,8 @@ class Event extends React.Component {
                     </div>
                 </div>
                 <div className="events">
-                    {events["events"].length > 0 ?
-                        events["events"].sort(function(a,b) {
-                            if (newest)
-                                return new Date(a.date) - new Date(b.date);
-                            else
-                                return new Date(b.date) - new Date(a.date);
-                        }).map((value, index) => {
+                    {events.length > 0 ?
+                        events.map((value, index) => {
                             let color_pick = ["event_blue", "event_grey"]
                             return (
                                 <EventDate
@@ -69,6 +122,9 @@ class Event extends React.Component {
                     </div>
                     }
                 </div>
+                {isLoading &&
+                    <div>Loading...</div>
+                }
             </div>
         )
     }
