@@ -44,8 +44,8 @@ function Footer(props) {
                 </a>
             </div>
             <div className="webmaster">
-                If there is any problem with the website please contact Quinnan
-                Gill on Slack.
+                *If there is any problem with the website please contact Quinnan
+                 on Slack.
             </div>
         </div>
     )
