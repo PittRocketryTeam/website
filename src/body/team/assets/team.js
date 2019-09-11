@@ -5,7 +5,7 @@ const team = {
     {
       name: "Eric Sherbocker",
       position: "Captain",
-      image: img_path + "",
+      image: img_path + "eric_s.jpg",
       descript: [
         "I am a junior Mechanical Engineering student and am currently serving as our team captain and manufacturing lead.",
         "I am looking forward to a successful year with our team! Please email me at, ems261@pitt.edu, with any questions regarding our organization."
@@ -28,34 +28,36 @@ const team = {
       ]
     },
     {
-      name: "Benjamin Franklin",
-      position: "Techincal Lead",
-      image: img_path + "officer_helmet.jpg",
-      descript: [
-        "I am the Pitt Rocketry Club's President.",
-        "I know everything about rockets so please talk to me."
-      ],
-      skills: ["rockets", "electronics", "programming", "mechanical"]
+        "name": "Leah Sirkis",
+        "position": "Mechanical Subteam Lead",
+        "image": img_path + "leah_sirkis.heic",
+        "descript": [
+          "I am SOAR's Mechanical Subteam Lead.",
+          "The Mechanical Team is in charge of design and manufacturing. If you have any questions or would like to join, feel free to contact me or the team!"
+        ],
+        skills: ["simulations", "CAD", "mechanical"]
     },
     {
-      name: "John Adams",
-      position: "Outreach Lead",
-      image: img_path + "officer_sit.jpg",
-      descript: [
-        "I am the Pitt Rocketry Club's President.",
-        "I know everything about rockets so please talk to me."
-      ],
-      skills: ["rockets", "electronics", "programming", "mechanical"]
+        "name": "Fernando Tabares",
+        "position": "Integration Lead",
+        "image": img_path + "fernando_tabares.jpg",
+        "descript": [
+          "I am SOAR's Integration Lead.",
+          "My job is to ensure that all design decisions are coherent throughout all of the rocket's subsystems."
+        ],
+        skills: ["CAD", "mechanical", "Rapid Prototyping", "manufacturing"]
     },
     {
-      name: "Thomas Paine",
-      position: "Business Lead",
-      image: img_path + "officer_helmet.jpg",
-      descript: [
-        "I am the Pitt Rocketry Club's President.",
-        "I know everything about rockets so please talk to me."
-      ],
-      skills: ["rockets", "electronics", "programming", "mechanical"]
+        "name":"Aarti Patel",
+        "position":"Vice President & Safety Lead",
+        "image": img_path + "aarti_patel.jpg",
+        "descript":[
+          "I am SOAR's Vice President & Safety Lead.",
+          "As the Vice President & Safety Lead, I am responsible for assisting with ",
+          "the organization of the team as well as implementing a safety plan ",
+          "for our team members."
+        ],
+        skills: ["mechanical","recovery system","CAD","technical writing","presentation"]
     }
   ]
 };
