@@ -13,6 +13,18 @@ const team = {
       skills: ["Mechanical Design", "Manufacturing", "SolidWorks Modeling"]
     },
     {
+        "name":"Aarti Patel",
+        "position":"Vice President & Safety Lead",
+        "image": img_path + "aarti_patel.jpg",
+        "descript":[
+          "I am SOAR's Vice President & Safety Lead.",
+          "As the Vice President & Safety Lead, I am responsible for assisting with ",
+          "the organization of the team as well as implementing a safety plan ",
+          "for our team members."
+        ],
+        skills: ["mechanical","recovery system","CAD","technical writing","presentation"]
+    },
+    {
       name: "Daniel Stumpp",
       position: "Avionics Lead",
       image: img_path + "dcs_pic.jpg",
@@ -46,18 +58,6 @@ const team = {
           "My job is to ensure that all design decisions are coherent throughout all of the rocket's subsystems."
         ],
         skills: ["CAD", "mechanical", "Rapid Prototyping", "manufacturing"]
-    },
-    {
-        "name":"Aarti Patel",
-        "position":"Vice President & Safety Lead",
-        "image": img_path + "aarti_patel.jpg",
-        "descript":[
-          "I am SOAR's Vice President & Safety Lead.",
-          "As the Vice President & Safety Lead, I am responsible for assisting with ",
-          "the organization of the team as well as implementing a safety plan ",
-          "for our team members."
-        ],
-        skills: ["mechanical","recovery system","CAD","technical writing","presentation"]
     }
   ]
 };
